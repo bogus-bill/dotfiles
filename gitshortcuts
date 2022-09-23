@@ -1,4 +1,4 @@
-alias amd="git commit --amend --no-edit"
+alias gitamd="git commit --amend --no-edit"
 alias gitpushfb="git push --force-with-lease"
 alias gitcia="git commit -a"
 alias gitb="git branch"
