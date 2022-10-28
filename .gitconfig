@@ -17,9 +17,9 @@
   new = green
 
 [core]
-  editor = nvim
+  editor = vim
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  excludesfile = /home/thib/dotfiles/gitignore
+  excludesfile = /home/elias/dotfiles/gitignore
   pager = delta
 
 [interactive]
@@ -27,6 +27,7 @@
 
 [delta]
   navigate = true  # use n and N to move between diff sections
+  side-by-side = true
 
 [merge]
   conflictstyle = diff3
@@ -86,16 +87,15 @@
   recent-branches = branch --sort=-committerdate --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 
 [github]
-  user = ornicar
+  user = elias
 
-[rerere]
-  # Remember my merges
-  # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
-  enabled = true
-[rebase]
-  autoStash = true
+#[rebase]
+#  autoStash = true
+
 [pull]
   rebase = false
 
 [credentials]
   helper = store
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
